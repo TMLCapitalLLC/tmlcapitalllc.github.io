@@ -1,447 +1,519 @@
-<table border="1" class="dataframe">
+<style type="text/css">
+#T_b54e8 table {
+  border: 1px solid black;
+}
+#T_b54e8 th {
+  border: 1px solid black;
+}
+#T_b54e8  td {
+  border: 1px solid black;
+}
+#T_b54e8 th {
+  background-color: #f2f2f2;
+}
+#T_b54e8_row0_col6, #T_b54e8_row1_col6, #T_b54e8_row2_col6, #T_b54e8_row3_col6, #T_b54e8_row4_col6, #T_b54e8_row5_col6, #T_b54e8_row6_col6, #T_b54e8_row7_col6, #T_b54e8_row8_col6, #T_b54e8_row9_col6, #T_b54e8_row10_col6, #T_b54e8_row11_col6, #T_b54e8_row12_col6, #T_b54e8_row13_col6, #T_b54e8_row16_col6, #T_b54e8_row18_col6, #T_b54e8_row19_col6, #T_b54e8_row20_col6, #T_b54e8_row24_col6, #T_b54e8_row25_col6, #T_b54e8_row27_col6, #T_b54e8_row32_col6, #T_b54e8_row35_col6, #T_b54e8_row36_col6, #T_b54e8_row37_col6, #T_b54e8_row45_col6, #T_b54e8_row46_col6 {
+  color: black;
+}
+#T_b54e8_row14_col6, #T_b54e8_row17_col6, #T_b54e8_row21_col6, #T_b54e8_row31_col6, #T_b54e8_row34_col6, #T_b54e8_row39_col6, #T_b54e8_row43_col6 {
+  color: blue;
+}
+#T_b54e8_row15_col6, #T_b54e8_row22_col6, #T_b54e8_row23_col6, #T_b54e8_row26_col6, #T_b54e8_row28_col6, #T_b54e8_row29_col6, #T_b54e8_row30_col6, #T_b54e8_row33_col6, #T_b54e8_row38_col6, #T_b54e8_row40_col6, #T_b54e8_row41_col6, #T_b54e8_row42_col6, #T_b54e8_row44_col6, #T_b54e8_row47_col6 {
+  color: red;
+}
+</style>
+<table id="T_b54e8">
   <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Time (ET)</th>
-      <th>Report</th>
-      <th>Period</th>
-      <th>Actual</th>
-      <th>Median Forecast</th>
-      <th>Previous</th>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_b54e8_level0_col0" class="col_heading level0 col0" >Time (ET)</th>
+      <th id="T_b54e8_level0_col1" class="col_heading level0 col1" >Report</th>
+      <th id="T_b54e8_level0_col2" class="col_heading level0 col2" >Period</th>
+      <th id="T_b54e8_level0_col3" class="col_heading level0 col3" >Actual</th>
+      <th id="T_b54e8_level0_col4" class="col_heading level0 col4" >Median Forecast</th>
+      <th id="T_b54e8_level0_col5" class="col_heading level0 col5" >Previous</th>
+      <th id="T_b54e8_level0_col6" class="col_heading level0 col6" >Inflation (llama3.2)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>2025-03-14</td>
-      <td>Consumer sentiment (prelim)</td>
-      <td>March</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <th id="T_b54e8_level0_row0" class="row_heading level0 row0" >0</th>
+      <td id="T_b54e8_row0_col0" class="data row0 col0" >2025-03-14 00:00:00</td>
+      <td id="T_b54e8_row0_col1" class="data row0 col1" >Consumer sentiment (prelim)</td>
+      <td id="T_b54e8_row0_col2" class="data row0 col2" >March</td>
+      <td id="T_b54e8_row0_col3" class="data row0 col3" ></td>
+      <td id="T_b54e8_row0_col4" class="data row0 col4" ></td>
+      <td id="T_b54e8_row0_col5" class="data row0 col5" ></td>
+      <td id="T_b54e8_row0_col6" class="data row0 col6" ></td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>2025-03-13</td>
-      <td>Initial jobless claims</td>
-      <td>March 8</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <th id="T_b54e8_level0_row1" class="row_heading level0 row1" >1</th>
+      <td id="T_b54e8_row1_col0" class="data row1 col0" >2025-03-13 00:00:00</td>
+      <td id="T_b54e8_row1_col1" class="data row1 col1" >Initial jobless claims</td>
+      <td id="T_b54e8_row1_col2" class="data row1 col2" >March 8</td>
+      <td id="T_b54e8_row1_col3" class="data row1 col3" ></td>
+      <td id="T_b54e8_row1_col4" class="data row1 col4" ></td>
+      <td id="T_b54e8_row1_col5" class="data row1 col5" ></td>
+      <td id="T_b54e8_row1_col6" class="data row1 col6" ></td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>2025-03-13</td>
-      <td>Producer price index</td>
-      <td>Feb.</td>
-      <td></td>
-      <td></td>
-      <td>0.4%</td>
+      <th id="T_b54e8_level0_row2" class="row_heading level0 row2" >2</th>
+      <td id="T_b54e8_row2_col0" class="data row2 col0" >2025-03-13 00:00:00</td>
+      <td id="T_b54e8_row2_col1" class="data row2 col1" >Producer price index</td>
+      <td id="T_b54e8_row2_col2" class="data row2 col2" >Feb.</td>
+      <td id="T_b54e8_row2_col3" class="data row2 col3" ></td>
+      <td id="T_b54e8_row2_col4" class="data row2 col4" ></td>
+      <td id="T_b54e8_row2_col5" class="data row2 col5" >0.4%</td>
+      <td id="T_b54e8_row2_col6" class="data row2 col6" ></td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>2025-03-13</td>
-      <td>PPI year over year</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>3.5%</td>
+      <th id="T_b54e8_level0_row3" class="row_heading level0 row3" >3</th>
+      <td id="T_b54e8_row3_col0" class="data row3 col0" >2025-03-13 00:00:00</td>
+      <td id="T_b54e8_row3_col1" class="data row3 col1" >PPI year over year</td>
+      <td id="T_b54e8_row3_col2" class="data row3 col2" ></td>
+      <td id="T_b54e8_row3_col3" class="data row3 col3" ></td>
+      <td id="T_b54e8_row3_col4" class="data row3 col4" ></td>
+      <td id="T_b54e8_row3_col5" class="data row3 col5" >3.5%</td>
+      <td id="T_b54e8_row3_col6" class="data row3 col6" ></td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>2025-03-13</td>
-      <td>Core PPI</td>
-      <td>Feb.</td>
-      <td></td>
-      <td></td>
-      <td>0.3%</td>
+      <th id="T_b54e8_level0_row4" class="row_heading level0 row4" >4</th>
+      <td id="T_b54e8_row4_col0" class="data row4 col0" >2025-03-13 00:00:00</td>
+      <td id="T_b54e8_row4_col1" class="data row4 col1" >Core PPI</td>
+      <td id="T_b54e8_row4_col2" class="data row4 col2" >Feb.</td>
+      <td id="T_b54e8_row4_col3" class="data row4 col3" ></td>
+      <td id="T_b54e8_row4_col4" class="data row4 col4" ></td>
+      <td id="T_b54e8_row4_col5" class="data row4 col5" >0.3%</td>
+      <td id="T_b54e8_row4_col6" class="data row4 col6" ></td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>2025-03-13</td>
-      <td>Core PPI year over year</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>3.4%</td>
+      <th id="T_b54e8_level0_row5" class="row_heading level0 row5" >5</th>
+      <td id="T_b54e8_row5_col0" class="data row5 col0" >2025-03-13 00:00:00</td>
+      <td id="T_b54e8_row5_col1" class="data row5 col1" >Core PPI year over year</td>
+      <td id="T_b54e8_row5_col2" class="data row5 col2" ></td>
+      <td id="T_b54e8_row5_col3" class="data row5 col3" ></td>
+      <td id="T_b54e8_row5_col4" class="data row5 col4" ></td>
+      <td id="T_b54e8_row5_col5" class="data row5 col5" >3.4%</td>
+      <td id="T_b54e8_row5_col6" class="data row5 col6" ></td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>2025-03-12</td>
-      <td>Monthly U.S. federal budget</td>
-      <td>Feb.</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <th id="T_b54e8_level0_row6" class="row_heading level0 row6" >6</th>
+      <td id="T_b54e8_row6_col0" class="data row6 col0" >2025-03-12 00:00:00</td>
+      <td id="T_b54e8_row6_col1" class="data row6 col1" >Monthly U.S. federal budget</td>
+      <td id="T_b54e8_row6_col2" class="data row6 col2" >Feb.</td>
+      <td id="T_b54e8_row6_col3" class="data row6 col3" ></td>
+      <td id="T_b54e8_row6_col4" class="data row6 col4" ></td>
+      <td id="T_b54e8_row6_col5" class="data row6 col5" ></td>
+      <td id="T_b54e8_row6_col6" class="data row6 col6" ></td>
     </tr>
     <tr>
-      <th>7</th>
-      <td>2025-03-12</td>
-      <td>Core CPI year over year</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>3.0%</td>
+      <th id="T_b54e8_level0_row7" class="row_heading level0 row7" >7</th>
+      <td id="T_b54e8_row7_col0" class="data row7 col0" >2025-03-12 00:00:00</td>
+      <td id="T_b54e8_row7_col1" class="data row7 col1" >Core CPI year over year</td>
+      <td id="T_b54e8_row7_col2" class="data row7 col2" ></td>
+      <td id="T_b54e8_row7_col3" class="data row7 col3" ></td>
+      <td id="T_b54e8_row7_col4" class="data row7 col4" ></td>
+      <td id="T_b54e8_row7_col5" class="data row7 col5" >3.0%</td>
+      <td id="T_b54e8_row7_col6" class="data row7 col6" ></td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>2025-03-12</td>
-      <td>Core CPI</td>
-      <td>Feb.</td>
-      <td></td>
-      <td></td>
-      <td>0.4%</td>
+      <th id="T_b54e8_level0_row8" class="row_heading level0 row8" >8</th>
+      <td id="T_b54e8_row8_col0" class="data row8 col0" >2025-03-12 00:00:00</td>
+      <td id="T_b54e8_row8_col1" class="data row8 col1" >Core CPI</td>
+      <td id="T_b54e8_row8_col2" class="data row8 col2" >Feb.</td>
+      <td id="T_b54e8_row8_col3" class="data row8 col3" ></td>
+      <td id="T_b54e8_row8_col4" class="data row8 col4" ></td>
+      <td id="T_b54e8_row8_col5" class="data row8 col5" >0.4%</td>
+      <td id="T_b54e8_row8_col6" class="data row8 col6" ></td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>2025-03-12</td>
-      <td>CPI year over year</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>3.0%</td>
+      <th id="T_b54e8_level0_row9" class="row_heading level0 row9" >9</th>
+      <td id="T_b54e8_row9_col0" class="data row9 col0" >2025-03-12 00:00:00</td>
+      <td id="T_b54e8_row9_col1" class="data row9 col1" >CPI year over year</td>
+      <td id="T_b54e8_row9_col2" class="data row9 col2" ></td>
+      <td id="T_b54e8_row9_col3" class="data row9 col3" ></td>
+      <td id="T_b54e8_row9_col4" class="data row9 col4" ></td>
+      <td id="T_b54e8_row9_col5" class="data row9 col5" >3.0%</td>
+      <td id="T_b54e8_row9_col6" class="data row9 col6" ></td>
     </tr>
     <tr>
-      <th>10</th>
-      <td>2025-03-12</td>
-      <td>Consumer price index</td>
-      <td>Feb.</td>
-      <td></td>
-      <td></td>
-      <td>0.5%</td>
+      <th id="T_b54e8_level0_row10" class="row_heading level0 row10" >10</th>
+      <td id="T_b54e8_row10_col0" class="data row10 col0" >2025-03-12 00:00:00</td>
+      <td id="T_b54e8_row10_col1" class="data row10 col1" >Consumer price index</td>
+      <td id="T_b54e8_row10_col2" class="data row10 col2" >Feb.</td>
+      <td id="T_b54e8_row10_col3" class="data row10 col3" ></td>
+      <td id="T_b54e8_row10_col4" class="data row10 col4" ></td>
+      <td id="T_b54e8_row10_col5" class="data row10 col5" >0.5%</td>
+      <td id="T_b54e8_row10_col6" class="data row10 col6" ></td>
     </tr>
     <tr>
-      <th>11</th>
-      <td>2025-03-11</td>
-      <td>Job openings</td>
-      <td>Jan.</td>
-      <td></td>
-      <td>--</td>
-      <td></td>
+      <th id="T_b54e8_level0_row11" class="row_heading level0 row11" >11</th>
+      <td id="T_b54e8_row11_col0" class="data row11 col0" >2025-03-11 00:00:00</td>
+      <td id="T_b54e8_row11_col1" class="data row11 col1" >Job openings</td>
+      <td id="T_b54e8_row11_col2" class="data row11 col2" >Jan.</td>
+      <td id="T_b54e8_row11_col3" class="data row11 col3" ></td>
+      <td id="T_b54e8_row11_col4" class="data row11 col4" >--</td>
+      <td id="T_b54e8_row11_col5" class="data row11 col5" ></td>
+      <td id="T_b54e8_row11_col6" class="data row11 col6" ></td>
     </tr>
     <tr>
-      <th>12</th>
-      <td>2025-03-11</td>
-      <td>NFIB optimism index</td>
-      <td>Feb.</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <th id="T_b54e8_level0_row12" class="row_heading level0 row12" >12</th>
+      <td id="T_b54e8_row12_col0" class="data row12 col0" >2025-03-11 00:00:00</td>
+      <td id="T_b54e8_row12_col1" class="data row12 col1" >NFIB optimism index</td>
+      <td id="T_b54e8_row12_col2" class="data row12 col2" >Feb.</td>
+      <td id="T_b54e8_row12_col3" class="data row12 col3" ></td>
+      <td id="T_b54e8_row12_col4" class="data row12 col4" ></td>
+      <td id="T_b54e8_row12_col5" class="data row12 col5" ></td>
+      <td id="T_b54e8_row12_col6" class="data row12 col6" ></td>
     </tr>
     <tr>
-      <th>13</th>
-      <td>2025-03-07</td>
-      <td>Hourly wages year over year</td>
-      <td></td>
-      <td></td>
-      <td>4.1%</td>
-      <td>4.1%</td>
+      <th id="T_b54e8_level0_row13" class="row_heading level0 row13" >13</th>
+      <td id="T_b54e8_row13_col0" class="data row13 col0" >2025-03-07 00:00:00</td>
+      <td id="T_b54e8_row13_col1" class="data row13 col1" >Hourly wages year over year</td>
+      <td id="T_b54e8_row13_col2" class="data row13 col2" ></td>
+      <td id="T_b54e8_row13_col3" class="data row13 col3" ></td>
+      <td id="T_b54e8_row13_col4" class="data row13 col4" >4.1%</td>
+      <td id="T_b54e8_row13_col5" class="data row13 col5" >4.1%</td>
+      <td id="T_b54e8_row13_col6" class="data row13 col6" >neutral</td>
     </tr>
     <tr>
-      <th>14</th>
-      <td>2025-03-07</td>
-      <td>U.S. jobs report</td>
-      <td>Feb.</td>
-      <td></td>
-      <td>160,000</td>
-      <td>143,000</td>
+      <th id="T_b54e8_level0_row14" class="row_heading level0 row14" >14</th>
+      <td id="T_b54e8_row14_col0" class="data row14 col0" >2025-03-07 00:00:00</td>
+      <td id="T_b54e8_row14_col1" class="data row14 col1" >U.S. jobs report</td>
+      <td id="T_b54e8_row14_col2" class="data row14 col2" >Feb.</td>
+      <td id="T_b54e8_row14_col3" class="data row14 col3" ></td>
+      <td id="T_b54e8_row14_col4" class="data row14 col4" >160,000</td>
+      <td id="T_b54e8_row14_col5" class="data row14 col5" >143,000</td>
+      <td id="T_b54e8_row14_col6" class="data row14 col6" >increase</td>
     </tr>
     <tr>
-      <th>15</th>
-      <td>2025-03-07</td>
-      <td>U.S. hourly wages</td>
-      <td>Feb.</td>
-      <td></td>
-      <td>0.3%</td>
-      <td>0.5%</td>
+      <th id="T_b54e8_level0_row15" class="row_heading level0 row15" >15</th>
+      <td id="T_b54e8_row15_col0" class="data row15 col0" >2025-03-07 00:00:00</td>
+      <td id="T_b54e8_row15_col1" class="data row15 col1" >U.S. hourly wages</td>
+      <td id="T_b54e8_row15_col2" class="data row15 col2" >Feb.</td>
+      <td id="T_b54e8_row15_col3" class="data row15 col3" ></td>
+      <td id="T_b54e8_row15_col4" class="data row15 col4" >0.3%</td>
+      <td id="T_b54e8_row15_col5" class="data row15 col5" >0.5%</td>
+      <td id="T_b54e8_row15_col6" class="data row15 col6" >decrease</td>
     </tr>
     <tr>
-      <th>16</th>
-      <td>2025-03-07</td>
-      <td>U.S. unemployment rate</td>
-      <td>Feb.</td>
-      <td></td>
-      <td>4.1%</td>
-      <td>4.0%</td>
+      <th id="T_b54e8_level0_row16" class="row_heading level0 row16" >16</th>
+      <td id="T_b54e8_row16_col0" class="data row16 col0" >2025-03-07 00:00:00</td>
+      <td id="T_b54e8_row16_col1" class="data row16 col1" >U.S. unemployment rate</td>
+      <td id="T_b54e8_row16_col2" class="data row16 col2" >Feb.</td>
+      <td id="T_b54e8_row16_col3" class="data row16 col3" ></td>
+      <td id="T_b54e8_row16_col4" class="data row16 col4" >4.1%</td>
+      <td id="T_b54e8_row16_col5" class="data row16 col5" >4.0%</td>
+      <td id="T_b54e8_row16_col6" class="data row16 col6" >neutral</td>
     </tr>
     <tr>
-      <th>17</th>
-      <td>2025-03-06</td>
-      <td>Wholesale inventories</td>
-      <td>Jan.</td>
-      <td></td>
-      <td>0.3%</td>
-      <td>-0.5%</td>
+      <th id="T_b54e8_level0_row17" class="row_heading level0 row17" >17</th>
+      <td id="T_b54e8_row17_col0" class="data row17 col0" >2025-03-06 00:00:00</td>
+      <td id="T_b54e8_row17_col1" class="data row17 col1" >Wholesale inventories</td>
+      <td id="T_b54e8_row17_col2" class="data row17 col2" >Jan.</td>
+      <td id="T_b54e8_row17_col3" class="data row17 col3" ></td>
+      <td id="T_b54e8_row17_col4" class="data row17 col4" >0.3%</td>
+      <td id="T_b54e8_row17_col5" class="data row17 col5" >-0.5%</td>
+      <td id="T_b54e8_row17_col6" class="data row17 col6" >increase</td>
     </tr>
     <tr>
-      <th>18</th>
-      <td>2025-03-06</td>
-      <td>U.S. trade deficit</td>
-      <td>Jan.</td>
-      <td></td>
-      <td>-$100B</td>
-      <td>-$98.4B</td>
+      <th id="T_b54e8_level0_row18" class="row_heading level0 row18" >18</th>
+      <td id="T_b54e8_row18_col0" class="data row18 col0" >2025-03-06 00:00:00</td>
+      <td id="T_b54e8_row18_col1" class="data row18 col1" >U.S. trade deficit</td>
+      <td id="T_b54e8_row18_col2" class="data row18 col2" >Jan.</td>
+      <td id="T_b54e8_row18_col3" class="data row18 col3" ></td>
+      <td id="T_b54e8_row18_col4" class="data row18 col4" >-$100B</td>
+      <td id="T_b54e8_row18_col5" class="data row18 col5" >-$98.4B</td>
+      <td id="T_b54e8_row18_col6" class="data row18 col6" >neutral</td>
     </tr>
     <tr>
-      <th>19</th>
-      <td>2025-03-06</td>
-      <td>U.S. productivity (final)</td>
-      <td>Q4</td>
-      <td></td>
-      <td>1.2%</td>
-      <td>1.2%</td>
+      <th id="T_b54e8_level0_row19" class="row_heading level0 row19" >19</th>
+      <td id="T_b54e8_row19_col0" class="data row19 col0" >2025-03-06 00:00:00</td>
+      <td id="T_b54e8_row19_col1" class="data row19 col1" >U.S. productivity (final)</td>
+      <td id="T_b54e8_row19_col2" class="data row19 col2" >Q4</td>
+      <td id="T_b54e8_row19_col3" class="data row19 col3" ></td>
+      <td id="T_b54e8_row19_col4" class="data row19 col4" >1.2%</td>
+      <td id="T_b54e8_row19_col5" class="data row19 col5" >1.2%</td>
+      <td id="T_b54e8_row19_col6" class="data row19 col6" >neutral</td>
     </tr>
     <tr>
-      <th>20</th>
-      <td>2025-03-06</td>
-      <td>Initial jobless claims</td>
-      <td>March 1</td>
-      <td></td>
-      <td>243,000</td>
-      <td>242,000</td>
+      <th id="T_b54e8_level0_row20" class="row_heading level0 row20" >20</th>
+      <td id="T_b54e8_row20_col0" class="data row20 col0" >2025-03-06 00:00:00</td>
+      <td id="T_b54e8_row20_col1" class="data row20 col1" >Initial jobless claims</td>
+      <td id="T_b54e8_row20_col2" class="data row20 col2" >March 1</td>
+      <td id="T_b54e8_row20_col3" class="data row20 col3" ></td>
+      <td id="T_b54e8_row20_col4" class="data row20 col4" >243,000</td>
+      <td id="T_b54e8_row20_col5" class="data row20 col5" >242,000</td>
+      <td id="T_b54e8_row20_col6" class="data row20 col6" >neutral</td>
     </tr>
     <tr>
-      <th>21</th>
-      <td>2025-03-05</td>
-      <td>Factory orders</td>
-      <td>Jan.</td>
-      <td></td>
-      <td>1.6%</td>
-      <td>-0.9%</td>
+      <th id="T_b54e8_level0_row21" class="row_heading level0 row21" >21</th>
+      <td id="T_b54e8_row21_col0" class="data row21 col0" >2025-03-05 00:00:00</td>
+      <td id="T_b54e8_row21_col1" class="data row21 col1" >Factory orders</td>
+      <td id="T_b54e8_row21_col2" class="data row21 col2" >Jan.</td>
+      <td id="T_b54e8_row21_col3" class="data row21 col3" ></td>
+      <td id="T_b54e8_row21_col4" class="data row21 col4" >1.6%</td>
+      <td id="T_b54e8_row21_col5" class="data row21 col5" >-0.9%</td>
+      <td id="T_b54e8_row21_col6" class="data row21 col6" >increase</td>
     </tr>
     <tr>
-      <th>22</th>
-      <td>2025-03-05</td>
-      <td>ADP employment</td>
-      <td>Feb.</td>
-      <td></td>
-      <td>143,000</td>
-      <td>183,000</td>
+      <th id="T_b54e8_level0_row22" class="row_heading level0 row22" >22</th>
+      <td id="T_b54e8_row22_col0" class="data row22 col0" >2025-03-05 00:00:00</td>
+      <td id="T_b54e8_row22_col1" class="data row22 col1" >ADP employment</td>
+      <td id="T_b54e8_row22_col2" class="data row22 col2" >Feb.</td>
+      <td id="T_b54e8_row22_col3" class="data row22 col3" ></td>
+      <td id="T_b54e8_row22_col4" class="data row22 col4" >143,000</td>
+      <td id="T_b54e8_row22_col5" class="data row22 col5" >183,000</td>
+      <td id="T_b54e8_row22_col6" class="data row22 col6" >decrease</td>
     </tr>
     <tr>
-      <th>23</th>
-      <td>2025-03-05</td>
-      <td>ISM services</td>
-      <td>Feb.</td>
-      <td></td>
-      <td>52.9%</td>
-      <td>52.8%</td>
+      <th id="T_b54e8_level0_row23" class="row_heading level0 row23" >23</th>
+      <td id="T_b54e8_row23_col0" class="data row23 col0" >2025-03-05 00:00:00</td>
+      <td id="T_b54e8_row23_col1" class="data row23 col1" >ISM services</td>
+      <td id="T_b54e8_row23_col2" class="data row23 col2" >Feb.</td>
+      <td id="T_b54e8_row23_col3" class="data row23 col3" ></td>
+      <td id="T_b54e8_row23_col4" class="data row23 col4" >52.9%</td>
+      <td id="T_b54e8_row23_col5" class="data row23 col5" >52.8%</td>
+      <td id="T_b54e8_row23_col6" class="data row23 col6" >decrease</td>
     </tr>
     <tr>
-      <th>24</th>
-      <td>2025-03-05</td>
-      <td>S&amp;P final U.S. services PMI</td>
-      <td>Feb.</td>
-      <td></td>
-      <td>--</td>
-      <td>49.7</td>
+      <th id="T_b54e8_level0_row24" class="row_heading level0 row24" >24</th>
+      <td id="T_b54e8_row24_col0" class="data row24 col0" >2025-03-05 00:00:00</td>
+      <td id="T_b54e8_row24_col1" class="data row24 col1" >S&P final U.S. services PMI</td>
+      <td id="T_b54e8_row24_col2" class="data row24 col2" >Feb.</td>
+      <td id="T_b54e8_row24_col3" class="data row24 col3" ></td>
+      <td id="T_b54e8_row24_col4" class="data row24 col4" >--</td>
+      <td id="T_b54e8_row24_col5" class="data row24 col5" >49.7</td>
+      <td id="T_b54e8_row24_col6" class="data row24 col6" ></td>
     </tr>
     <tr>
-      <th>25</th>
-      <td>2025-03-03</td>
-      <td>S&amp;P final U.S. manufacturing PMI</td>
-      <td>Feb.</td>
-      <td></td>
-      <td>--</td>
-      <td>51.6</td>
+      <th id="T_b54e8_level0_row25" class="row_heading level0 row25" >25</th>
+      <td id="T_b54e8_row25_col0" class="data row25 col0" >2025-03-03 00:00:00</td>
+      <td id="T_b54e8_row25_col1" class="data row25 col1" >S&P final U.S. manufacturing PMI</td>
+      <td id="T_b54e8_row25_col2" class="data row25 col2" >Feb.</td>
+      <td id="T_b54e8_row25_col3" class="data row25 col3" ></td>
+      <td id="T_b54e8_row25_col4" class="data row25 col4" >--</td>
+      <td id="T_b54e8_row25_col5" class="data row25 col5" >51.6</td>
+      <td id="T_b54e8_row25_col6" class="data row25 col6" ></td>
     </tr>
     <tr>
-      <th>26</th>
-      <td>2025-03-03</td>
-      <td>Construction spending</td>
-      <td>Jan.</td>
-      <td></td>
-      <td>0.1%</td>
-      <td>0.5%</td>
+      <th id="T_b54e8_level0_row26" class="row_heading level0 row26" >26</th>
+      <td id="T_b54e8_row26_col0" class="data row26 col0" >2025-03-03 00:00:00</td>
+      <td id="T_b54e8_row26_col1" class="data row26 col1" >Construction spending</td>
+      <td id="T_b54e8_row26_col2" class="data row26 col2" >Jan.</td>
+      <td id="T_b54e8_row26_col3" class="data row26 col3" ></td>
+      <td id="T_b54e8_row26_col4" class="data row26 col4" >0.1%</td>
+      <td id="T_b54e8_row26_col5" class="data row26 col5" >0.5%</td>
+      <td id="T_b54e8_row26_col6" class="data row26 col6" >decrease</td>
     </tr>
     <tr>
-      <th>27</th>
-      <td>2025-03-03</td>
-      <td>ISM manufacturing</td>
-      <td>Feb.</td>
-      <td></td>
-      <td>50.6%</td>
-      <td>50.9%</td>
+      <th id="T_b54e8_level0_row27" class="row_heading level0 row27" >27</th>
+      <td id="T_b54e8_row27_col0" class="data row27 col0" >2025-03-03 00:00:00</td>
+      <td id="T_b54e8_row27_col1" class="data row27 col1" >ISM manufacturing</td>
+      <td id="T_b54e8_row27_col2" class="data row27 col2" >Feb.</td>
+      <td id="T_b54e8_row27_col3" class="data row27 col3" ></td>
+      <td id="T_b54e8_row27_col4" class="data row27 col4" >50.6%</td>
+      <td id="T_b54e8_row27_col5" class="data row27 col5" >50.9%</td>
+      <td id="T_b54e8_row27_col6" class="data row27 col6" >neutral</td>
     </tr>
     <tr>
-      <th>28</th>
-      <td>2025-03-02</td>
-      <td>Consumer confidence</td>
-      <td>Feb.</td>
-      <td>98.3</td>
-      <td>102.3</td>
-      <td>105.3</td>
+      <th id="T_b54e8_level0_row28" class="row_heading level0 row28" >28</th>
+      <td id="T_b54e8_row28_col0" class="data row28 col0" >2025-03-02 00:00:00</td>
+      <td id="T_b54e8_row28_col1" class="data row28 col1" >Consumer confidence</td>
+      <td id="T_b54e8_row28_col2" class="data row28 col2" >Feb.</td>
+      <td id="T_b54e8_row28_col3" class="data row28 col3" >98.3</td>
+      <td id="T_b54e8_row28_col4" class="data row28 col4" >102.3</td>
+      <td id="T_b54e8_row28_col5" class="data row28 col5" >105.3</td>
+      <td id="T_b54e8_row28_col6" class="data row28 col6" >decrease</td>
     </tr>
     <tr>
-      <th>29</th>
-      <td>2025-03-02</td>
-      <td>Consumer credit</td>
-      <td>Jan.</td>
-      <td></td>
-      <td>$12.0B</td>
-      <td>$40.8B</td>
+      <th id="T_b54e8_level0_row29" class="row_heading level0 row29" >29</th>
+      <td id="T_b54e8_row29_col0" class="data row29 col0" >2025-03-02 00:00:00</td>
+      <td id="T_b54e8_row29_col1" class="data row29 col1" >Consumer credit</td>
+      <td id="T_b54e8_row29_col2" class="data row29 col2" >Jan.</td>
+      <td id="T_b54e8_row29_col3" class="data row29 col3" ></td>
+      <td id="T_b54e8_row29_col4" class="data row29 col4" >$12.0B</td>
+      <td id="T_b54e8_row29_col5" class="data row29 col5" >$40.8B</td>
+      <td id="T_b54e8_row29_col6" class="data row29 col6" >decrease</td>
     </tr>
     <tr>
-      <th>30</th>
-      <td>2025-03-02</td>
-      <td>Pending home sales</td>
-      <td>Jan.</td>
-      <td>-4.9%</td>
-      <td>-1.0%</td>
-      <td>-5.5%</td>
+      <th id="T_b54e8_level0_row30" class="row_heading level0 row30" >30</th>
+      <td id="T_b54e8_row30_col0" class="data row30 col0" >2025-03-02 00:00:00</td>
+      <td id="T_b54e8_row30_col1" class="data row30 col1" >Pending home sales</td>
+      <td id="T_b54e8_row30_col2" class="data row30 col2" >Jan.</td>
+      <td id="T_b54e8_row30_col3" class="data row30 col3" >-4.9%</td>
+      <td id="T_b54e8_row30_col4" class="data row30 col4" >-1.0%</td>
+      <td id="T_b54e8_row30_col5" class="data row30 col5" >-5.5%</td>
+      <td id="T_b54e8_row30_col6" class="data row30 col6" >decrease</td>
     </tr>
     <tr>
-      <th>31</th>
-      <td>2025-03-02</td>
-      <td>S&amp;P Case-Shiller home price index (20 cities)</td>
-      <td>Dec.</td>
-      <td>4.5%</td>
-      <td>--</td>
-      <td>4.4%</td>
+      <th id="T_b54e8_level0_row31" class="row_heading level0 row31" >31</th>
+      <td id="T_b54e8_row31_col0" class="data row31 col0" >2025-03-02 00:00:00</td>
+      <td id="T_b54e8_row31_col1" class="data row31 col1" >S&P Case-Shiller home price index (20 cities)</td>
+      <td id="T_b54e8_row31_col2" class="data row31 col2" >Dec.</td>
+      <td id="T_b54e8_row31_col3" class="data row31 col3" >4.5%</td>
+      <td id="T_b54e8_row31_col4" class="data row31 col4" >--</td>
+      <td id="T_b54e8_row31_col5" class="data row31 col5" >4.4%</td>
+      <td id="T_b54e8_row31_col6" class="data row31 col6" >increase</td>
     </tr>
     <tr>
-      <th>32</th>
-      <td>2025-03-02</td>
-      <td>Auto sales</td>
-      <td>Feb.</td>
-      <td></td>
-      <td>--</td>
-      <td>15.6 million</td>
+      <th id="T_b54e8_level0_row32" class="row_heading level0 row32" >32</th>
+      <td id="T_b54e8_row32_col0" class="data row32 col0" >2025-03-02 00:00:00</td>
+      <td id="T_b54e8_row32_col1" class="data row32 col1" >Auto sales</td>
+      <td id="T_b54e8_row32_col2" class="data row32 col2" >Feb.</td>
+      <td id="T_b54e8_row32_col3" class="data row32 col3" ></td>
+      <td id="T_b54e8_row32_col4" class="data row32 col4" >--</td>
+      <td id="T_b54e8_row32_col5" class="data row32 col5" >15.6 million</td>
+      <td id="T_b54e8_row32_col6" class="data row32 col6" ></td>
     </tr>
     <tr>
-      <th>33</th>
-      <td>2025-03-02</td>
-      <td>Chicago Business Barometer (PMI)</td>
-      <td>Feb.</td>
-      <td>45.5</td>
-      <td>41.0</td>
-      <td>39.5</td>
+      <th id="T_b54e8_level0_row33" class="row_heading level0 row33" >33</th>
+      <td id="T_b54e8_row33_col0" class="data row33 col0" >2025-03-02 00:00:00</td>
+      <td id="T_b54e8_row33_col1" class="data row33 col1" >Chicago Business Barometer (PMI)</td>
+      <td id="T_b54e8_row33_col2" class="data row33 col2" >Feb.</td>
+      <td id="T_b54e8_row33_col3" class="data row33 col3" >45.5</td>
+      <td id="T_b54e8_row33_col4" class="data row33 col4" >41.0</td>
+      <td id="T_b54e8_row33_col5" class="data row33 col5" >39.5</td>
+      <td id="T_b54e8_row33_col6" class="data row33 col6" >decrease</td>
     </tr>
     <tr>
-      <th>34</th>
-      <td>2025-02-28</td>
-      <td>Personal income</td>
-      <td>Jan.</td>
-      <td>0.9%</td>
-      <td>0.4%</td>
-      <td>0.4%</td>
+      <th id="T_b54e8_level0_row34" class="row_heading level0 row34" >34</th>
+      <td id="T_b54e8_row34_col0" class="data row34 col0" >2025-02-28 00:00:00</td>
+      <td id="T_b54e8_row34_col1" class="data row34 col1" >Personal income</td>
+      <td id="T_b54e8_row34_col2" class="data row34 col2" >Jan.</td>
+      <td id="T_b54e8_row34_col3" class="data row34 col3" >0.9%</td>
+      <td id="T_b54e8_row34_col4" class="data row34 col4" >0.4%</td>
+      <td id="T_b54e8_row34_col5" class="data row34 col5" >0.4%</td>
+      <td id="T_b54e8_row34_col6" class="data row34 col6" >increase</td>
     </tr>
     <tr>
-      <th>35</th>
-      <td>2025-02-28</td>
-      <td>PCE index</td>
-      <td>Jan.</td>
-      <td>0.3%</td>
-      <td>0.3%</td>
-      <td>0.3%</td>
+      <th id="T_b54e8_level0_row35" class="row_heading level0 row35" >35</th>
+      <td id="T_b54e8_row35_col0" class="data row35 col0" >2025-02-28 00:00:00</td>
+      <td id="T_b54e8_row35_col1" class="data row35 col1" >PCE index</td>
+      <td id="T_b54e8_row35_col2" class="data row35 col2" >Jan.</td>
+      <td id="T_b54e8_row35_col3" class="data row35 col3" >0.3%</td>
+      <td id="T_b54e8_row35_col4" class="data row35 col4" >0.3%</td>
+      <td id="T_b54e8_row35_col5" class="data row35 col5" >0.3%</td>
+      <td id="T_b54e8_row35_col6" class="data row35 col6" >neutral</td>
     </tr>
     <tr>
-      <th>36</th>
-      <td>2025-02-28</td>
-      <td>PCE (year-over-year)</td>
-      <td></td>
-      <td>2.5%</td>
-      <td>2.5%</td>
-      <td>2.6%</td>
+      <th id="T_b54e8_level0_row36" class="row_heading level0 row36" >36</th>
+      <td id="T_b54e8_row36_col0" class="data row36 col0" >2025-02-28 00:00:00</td>
+      <td id="T_b54e8_row36_col1" class="data row36 col1" >PCE (year-over-year)</td>
+      <td id="T_b54e8_row36_col2" class="data row36 col2" ></td>
+      <td id="T_b54e8_row36_col3" class="data row36 col3" >2.5%</td>
+      <td id="T_b54e8_row36_col4" class="data row36 col4" >2.5%</td>
+      <td id="T_b54e8_row36_col5" class="data row36 col5" >2.6%</td>
+      <td id="T_b54e8_row36_col6" class="data row36 col6" >neutral</td>
     </tr>
     <tr>
-      <th>37</th>
-      <td>2025-02-28</td>
-      <td>Core PCE index</td>
-      <td>Jan.</td>
-      <td>0.3%</td>
-      <td>0.3%</td>
-      <td>0.2%</td>
+      <th id="T_b54e8_level0_row37" class="row_heading level0 row37" >37</th>
+      <td id="T_b54e8_row37_col0" class="data row37 col0" >2025-02-28 00:00:00</td>
+      <td id="T_b54e8_row37_col1" class="data row37 col1" >Core PCE index</td>
+      <td id="T_b54e8_row37_col2" class="data row37 col2" >Jan.</td>
+      <td id="T_b54e8_row37_col3" class="data row37 col3" >0.3%</td>
+      <td id="T_b54e8_row37_col4" class="data row37 col4" >0.3%</td>
+      <td id="T_b54e8_row37_col5" class="data row37 col5" >0.2%</td>
+      <td id="T_b54e8_row37_col6" class="data row37 col6" >neutral</td>
     </tr>
     <tr>
-      <th>38</th>
-      <td>2025-02-28</td>
-      <td>Core PCE (year-over-year)</td>
-      <td></td>
-      <td>2.6%</td>
-      <td>2.6%</td>
-      <td>2.9%</td>
+      <th id="T_b54e8_level0_row38" class="row_heading level0 row38" >38</th>
+      <td id="T_b54e8_row38_col0" class="data row38 col0" >2025-02-28 00:00:00</td>
+      <td id="T_b54e8_row38_col1" class="data row38 col1" >Core PCE (year-over-year)</td>
+      <td id="T_b54e8_row38_col2" class="data row38 col2" ></td>
+      <td id="T_b54e8_row38_col3" class="data row38 col3" >2.6%</td>
+      <td id="T_b54e8_row38_col4" class="data row38 col4" >2.6%</td>
+      <td id="T_b54e8_row38_col5" class="data row38 col5" >2.9%</td>
+      <td id="T_b54e8_row38_col6" class="data row38 col6" >decrease</td>
     </tr>
     <tr>
-      <th>39</th>
-      <td>2025-02-28</td>
-      <td>Advanced U.S. trade balance in goods</td>
-      <td>Jan.</td>
-      <td>$153.3B</td>
-      <td>--</td>
-      <td>-$122.0B</td>
+      <th id="T_b54e8_level0_row39" class="row_heading level0 row39" >39</th>
+      <td id="T_b54e8_row39_col0" class="data row39 col0" >2025-02-28 00:00:00</td>
+      <td id="T_b54e8_row39_col1" class="data row39 col1" >Advanced U.S. trade balance in goods</td>
+      <td id="T_b54e8_row39_col2" class="data row39 col2" >Jan.</td>
+      <td id="T_b54e8_row39_col3" class="data row39 col3" >$153.3B</td>
+      <td id="T_b54e8_row39_col4" class="data row39 col4" >--</td>
+      <td id="T_b54e8_row39_col5" class="data row39 col5" >-$122.0B</td>
+      <td id="T_b54e8_row39_col6" class="data row39 col6" >increase</td>
     </tr>
     <tr>
-      <th>40</th>
-      <td>2025-02-28</td>
-      <td>Advanced retail inventories</td>
-      <td>Jan.</td>
-      <td></td>
-      <td>-0.1%</td>
-      <td>-0.5%</td>
+      <th id="T_b54e8_level0_row40" class="row_heading level0 row40" >40</th>
+      <td id="T_b54e8_row40_col0" class="data row40 col0" >2025-02-28 00:00:00</td>
+      <td id="T_b54e8_row40_col1" class="data row40 col1" >Advanced retail inventories</td>
+      <td id="T_b54e8_row40_col2" class="data row40 col2" >Jan.</td>
+      <td id="T_b54e8_row40_col3" class="data row40 col3" ></td>
+      <td id="T_b54e8_row40_col4" class="data row40 col4" >-0.1%</td>
+      <td id="T_b54e8_row40_col5" class="data row40 col5" >-0.5%</td>
+      <td id="T_b54e8_row40_col6" class="data row40 col6" >decrease</td>
     </tr>
     <tr>
-      <th>41</th>
-      <td>2025-02-28</td>
-      <td>Advanced wholesale inventories</td>
-      <td>Jan.</td>
-      <td></td>
-      <td>0.7%</td>
-      <td>-0.4%</td>
+      <th id="T_b54e8_level0_row41" class="row_heading level0 row41" >41</th>
+      <td id="T_b54e8_row41_col0" class="data row41 col0" >2025-02-28 00:00:00</td>
+      <td id="T_b54e8_row41_col1" class="data row41 col1" >Advanced wholesale inventories</td>
+      <td id="T_b54e8_row41_col2" class="data row41 col2" >Jan.</td>
+      <td id="T_b54e8_row41_col3" class="data row41 col3" ></td>
+      <td id="T_b54e8_row41_col4" class="data row41 col4" >0.7%</td>
+      <td id="T_b54e8_row41_col5" class="data row41 col5" >-0.4%</td>
+      <td id="T_b54e8_row41_col6" class="data row41 col6" >decrease</td>
     </tr>
     <tr>
-      <th>42</th>
-      <td>2025-02-28</td>
-      <td>Personal spending</td>
-      <td>Jan.</td>
-      <td>-0.2%</td>
-      <td>0.1%</td>
-      <td>0.7%</td>
+      <th id="T_b54e8_level0_row42" class="row_heading level0 row42" >42</th>
+      <td id="T_b54e8_row42_col0" class="data row42 col0" >2025-02-28 00:00:00</td>
+      <td id="T_b54e8_row42_col1" class="data row42 col1" >Personal spending</td>
+      <td id="T_b54e8_row42_col2" class="data row42 col2" >Jan.</td>
+      <td id="T_b54e8_row42_col3" class="data row42 col3" >-0.2%</td>
+      <td id="T_b54e8_row42_col4" class="data row42 col4" >0.1%</td>
+      <td id="T_b54e8_row42_col5" class="data row42 col5" >0.7%</td>
+      <td id="T_b54e8_row42_col6" class="data row42 col6" >decrease</td>
     </tr>
     <tr>
-      <th>43</th>
-      <td>2025-02-27</td>
-      <td>Durable-goods orders</td>
-      <td>Jan.</td>
-      <td>3.1%</td>
-      <td>2.0%</td>
-      <td>-2.2%</td>
+      <th id="T_b54e8_level0_row43" class="row_heading level0 row43" >43</th>
+      <td id="T_b54e8_row43_col0" class="data row43 col0" >2025-02-27 00:00:00</td>
+      <td id="T_b54e8_row43_col1" class="data row43 col1" >Durable-goods orders</td>
+      <td id="T_b54e8_row43_col2" class="data row43 col2" >Jan.</td>
+      <td id="T_b54e8_row43_col3" class="data row43 col3" >3.1%</td>
+      <td id="T_b54e8_row43_col4" class="data row43 col4" >2.0%</td>
+      <td id="T_b54e8_row43_col5" class="data row43 col5" >-2.2%</td>
+      <td id="T_b54e8_row43_col6" class="data row43 col6" >increase</td>
     </tr>
     <tr>
-      <th>44</th>
-      <td>2025-02-27</td>
-      <td>Durable-goods minus transportation</td>
-      <td>Jan.</td>
-      <td>0.0%</td>
-      <td>--</td>
-      <td>0.1%</td>
+      <th id="T_b54e8_level0_row44" class="row_heading level0 row44" >44</th>
+      <td id="T_b54e8_row44_col0" class="data row44 col0" >2025-02-27 00:00:00</td>
+      <td id="T_b54e8_row44_col1" class="data row44 col1" >Durable-goods minus transportation</td>
+      <td id="T_b54e8_row44_col2" class="data row44 col2" >Jan.</td>
+      <td id="T_b54e8_row44_col3" class="data row44 col3" >0.0%</td>
+      <td id="T_b54e8_row44_col4" class="data row44 col4" >--</td>
+      <td id="T_b54e8_row44_col5" class="data row44 col5" >0.1%</td>
+      <td id="T_b54e8_row44_col6" class="data row44 col6" >decrease</td>
     </tr>
     <tr>
-      <th>45</th>
-      <td>2025-02-27</td>
-      <td>GDP (second reading)</td>
-      <td>Q4</td>
-      <td>2.3%</td>
-      <td>2.3%</td>
-      <td>2.3%</td>
+      <th id="T_b54e8_level0_row45" class="row_heading level0 row45" >45</th>
+      <td id="T_b54e8_row45_col0" class="data row45 col0" >2025-02-27 00:00:00</td>
+      <td id="T_b54e8_row45_col1" class="data row45 col1" >GDP (second reading)</td>
+      <td id="T_b54e8_row45_col2" class="data row45 col2" >Q4</td>
+      <td id="T_b54e8_row45_col3" class="data row45 col3" >2.3%</td>
+      <td id="T_b54e8_row45_col4" class="data row45 col4" >2.3%</td>
+      <td id="T_b54e8_row45_col5" class="data row45 col5" >2.3%</td>
+      <td id="T_b54e8_row45_col6" class="data row45 col6" >neutral</td>
     </tr>
     <tr>
-      <th>46</th>
-      <td>2025-02-27</td>
-      <td>Initial jobless claims</td>
-      <td>Feb. 22</td>
-      <td>242,000</td>
-      <td>225,000</td>
-      <td>220,000</td>
+      <th id="T_b54e8_level0_row46" class="row_heading level0 row46" >46</th>
+      <td id="T_b54e8_row46_col0" class="data row46 col0" >2025-02-27 00:00:00</td>
+      <td id="T_b54e8_row46_col1" class="data row46 col1" >Initial jobless claims</td>
+      <td id="T_b54e8_row46_col2" class="data row46 col2" >Feb. 22</td>
+      <td id="T_b54e8_row46_col3" class="data row46 col3" >242,000</td>
+      <td id="T_b54e8_row46_col4" class="data row46 col4" >225,000</td>
+      <td id="T_b54e8_row46_col5" class="data row46 col5" >220,000</td>
+      <td id="T_b54e8_row46_col6" class="data row46 col6" >neutral</td>
     </tr>
     <tr>
-      <th>47</th>
-      <td>2025-02-26</td>
-      <td>New home sales</td>
-      <td>Jan.</td>
-      <td>657,000</td>
-      <td>671,000</td>
-      <td>734,000</td>
+      <th id="T_b54e8_level0_row47" class="row_heading level0 row47" >47</th>
+      <td id="T_b54e8_row47_col0" class="data row47 col0" >2025-02-26 00:00:00</td>
+      <td id="T_b54e8_row47_col1" class="data row47 col1" >New home sales</td>
+      <td id="T_b54e8_row47_col2" class="data row47 col2" >Jan.</td>
+      <td id="T_b54e8_row47_col3" class="data row47 col3" >657,000</td>
+      <td id="T_b54e8_row47_col4" class="data row47 col4" >671,000</td>
+      <td id="T_b54e8_row47_col5" class="data row47 col5" >734,000</td>
+      <td id="T_b54e8_row47_col6" class="data row47 col6" >decrease</td>
     </tr>
   </tbody>
 </table>
